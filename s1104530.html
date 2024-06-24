@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+fieldset {
+    width: 200px;
+    height: 20%;
+    margin: 0 auto;
+   /* border: none;*/
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    max-width: 12ch;
+}
+
+label[for="remember"] {
+    display: inline-block;
+    margin-right: 10px;
+    text-align:left;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    width: 100px;  /* Adjust as needed */
+    
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Just Login</legend>
+            <label for="username">帳號:</label>
+            <input type="text" id="username" name="username" maxlength="12" required>
+            <br>
+            <label for="password">密碼:</label>
+            <input type="password" id="password" name="password" maxlength="12" required>
+            <br>
+            <div class="form-group">
+            <label for="remember">
+                <input type="checkbox" id="remember" name="remember"> 記住帳號
+            </label>
+            <br>
+            <button type="submit">登入</button>
+        </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>
